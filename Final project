@@ -1,0 +1,10 @@
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():
+    return '<h2>NUMBER GAME<h2> hello, people in this website i be giving you a number game tutorial on how you can guess someone based on reading their minds! Step one ask them to pick a random number between ten to ninty nine. Ex:twenty five Then step two apply the following formula : #no from 10 to 99 times 90 times 20 times 50 and finally divide by 11.25. ask them the result first. from the examples given it will look like 25x90x20x50 and finally divide by 11.25. NOTE FROM HERE THE TRICK IS ALREADY OVER  because when they say out the result you can just take the three numbers and divide by 8 and it will be their chosen number. for the number 25 the result after division by 11.25 is 200000 at first they think that you only see that particular number and that the person think that you will never know what number they chose in the first place, but little did they know from that you can secretly take a calculator or divide mentally the first three digits and eliminate additional zeros by 8. you will be suprised that you indeed found out about their number.From that i would like to denounce that making this simple yet interesting website is good. I came about doing this tricks because of three big reasons such as proving the myth that reading people mind does not exist wrong, Entertain people by showing this trick, and most importantly learn to think outside the box.'
+
+if __name__ == '__main__':
+    app.run()
