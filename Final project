@@ -1,10 +1,11 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask #Here I am using Flask as an object to create my project of my descriptive website and an imported modules called "Flask" which overall creates an app.
+app = Flask(__name__)#Here I use the variable app to identify
 
 
-@app.route('/')
-def hello_world():
+@app.route('/')# I have used App routing which is used to map  specific URL with  associated function that intends to perform some task. In other words, we can say that if we visit the particular URL mapped to some particular function, the output of that function is rendered on the browser's screen which all in all tells what that url return.
+def hello_world():#Here I created a function called "Hello_world"
     return '<h2>NUMBER GAME<h2> hello, people in this website i be giving you a number game tutorial on how you can guess someone based on reading their minds! Step one ask them to pick a random number between ten to ninty nine. Ex:twenty five Then step two apply the following formula : #no from 10 to 99 times 90 times 20 times 50 and finally divide by 11.25. ask them the result first. from the examples given it will look like 25x90x20x50 and finally divide by 11.25. NOTE FROM HERE THE TRICK IS ALREADY OVER  because when they say out the result you can just take the three numbers and divide by 8 and it will be their chosen number. for the number 25 the result after division by 11.25 is 200000 at first they think that you only see that particular number and that the person think that you will never know what number they chose in the first place, but little did they know from that you can secretly take a calculator or divide mentally the first three digits and eliminate additional zeros by 8. you will be suprised that you indeed found out about their number.From that i would like to denounce that making this simple yet interesting website is good. I came about doing this tricks because of three big reasons such as proving the myth that reading people mind does not exist wrong, Entertain people by showing this trick, and most importantly learn to think outside the box.'
-
+# The above code shows the title "NUMBER GAME" and the description of it. on localhost port 5000 in a web browser when run with the python app.py command and the Flask library installed and also a methods to write a description using return and <h2> which is header 2.
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=true)
+ # The above code states that if __name__ == "__main__": app.run()  uses a method called run(). The condition __name__ == "__main__" ensures that the run() method is called only when main.py is run as the main program. The run() method will not be called if you import main.py in another Python module which overall runs the app. I used a primitive data types called boleean where i make sure that the debug is true.
